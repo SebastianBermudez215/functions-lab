@@ -1,0 +1,98 @@
+function greeting() {
+    return alert('hey there')
+}
+
+greeting();
+
+function reversedNumber(num) {
+    return String(num).split("").reverse().join("")
+}
+
+function check_Palindrome(str_entry){
+       var cstr = str_entry.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'');
+        var count = 0;
+        if(cstr==="") {
+            console.log("Nothing found!");
+            return false;
+        }
+
+        function alphabet_order(str)
+        {
+      return str.split('').sort().join('');
+        }
+      console.log(alphabet_order("sebastian"));
+
+      function changeToLowerCase("WRITING IS FUN") {
+            
+      }
+
+      //prompt 6
+
+      function uppercase(str)
+{
+  var array1 = str.split(' ');
+  var newarray1 = [];
+    
+  for(var x = 0; x < array1.length; x++){
+      newarray1.push(array1[x].charAt(0).toUpperCase()+array1[x].slice(1));
+  }
+  return newarray1.join(' ');
+}
+console.log(uppercase("software developer jobs available"));
+
+//prompt 7
+
+function find_longest_word(str)
+{
+  var array1 = str.match(/\w[a-z]{0,}/gi);
+  var result = array1[0];
+
+  for(var x = 1 ; x < array1.length ; x++)
+  {
+    if(result.length < array1[x].length)
+    {
+    result = array1[x];
+    } 
+  }
+  return result;
+}
+console.log(find_longest_word('Sebastian is a male'));
+
+//prompt 8
+
+function multiply(a, b) {
+  return a * b;
+}
+
+console.log( multiply(2, 4) );
+
+//prompt 9
+
+let animals = ["Lions", "Bears", "Tigers"];
+
+function myFunction() {
+  animals.reverse();
+}
+
+//prompt 10
+
+function isIsogram (str) {
+  return !/(.).*\1/.test(str);
+}
+
+
+//fortune teller
+
+let company = google;
+
+let salary = 10000000;
+
+let geographic = Californa;
+
+let job = movieDirector
+; 
+function fortuneTeller(company, salary, geographic, job) {
+  return console.log(prompt = (`You will work at ${company} making a salary of ${salary} living in ${geographic} as a ${job}.`))
+}
+
+fortuneTeller()
